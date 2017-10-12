@@ -161,13 +161,13 @@ char sample_GPS_data (void)
 	_delay_ms(2000);
 	printf("AT+CIPMUX=0\r\n");
 	_delay_ms(1000);
-	printf("AT+CSTT=\"safaricom\",\"\",\"\"\r\n");
+	printf("AT+CSTT=\"APN\",\"\",\"\"\r\n");
 	_delay_ms(2000);
 	printf("AT+CIICR\r\n");
 	_delay_ms(3000);
 	printf("AT+CIFSR\r\n");
 	_delay_ms(2000);
-	printf("AT+CIPSTART=\"TCP\",\"163.172.186.181\",\"9000\"\r\n");
+	printf("AT+CIPSTART=\"TCP\",\"IP\",\"PORT\"\r\n");
 	_delay_ms(1000);
 	printf("AT+CIPSEND\r\n");
 	_delay_ms(2000);
